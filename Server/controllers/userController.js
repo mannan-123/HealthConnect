@@ -1,11 +1,11 @@
-const Student = require("../models/user");
+const Users = require("../models/user");
 
 // add student
-async function addStudent(req, res)
+async function addPatients(req, res)
 {
     try
     {
-        const student = await Student.create(req.body);
+        const student = await Users.create(req.body);
         res.status(201).json(student);
     } catch (err)
     {
@@ -13,11 +13,13 @@ async function addStudent(req, res)
     }
 }
 // get all students
-async function getAllStudent(req, res)
+
+
+async function getAllPatients(req, res)
 {
     try
     {
-        const students = await Student.find();
+        const students = await Users.find();
         res.status(200).json({ student: students, message: "Successfully finded" });
     } catch (err)
     {
@@ -25,12 +27,12 @@ async function getAllStudent(req, res)
     }
 }
 // update student by id
-async function updateStudent(req, res)
+async function updatePatients(req, res)
 {
     try
     {
         const { id } = req.params;
-        const updatedStudent = await Student.findByIdAndUpdate(id, req.body, {
+        const updatedStudent = await Users.findByIdAndUpdate(id, req.body, {
             new: true,
         });
         res.json(updatedStudent);
@@ -41,13 +43,13 @@ async function updateStudent(req, res)
 }
 // delete a student by id
 
-async function deleteStudent(req, res)
+async function deletePatients(req, res)
 {
     try
     {
         const { id } = req.params;
         console.log(id);
-        await Student.findByIdAndRemove(id);
+        await Users.findByIdAndRemove(id);
         res.sendStatus(200);
     } catch (err)
     {
@@ -56,8 +58,8 @@ async function deleteStudent(req, res)
 }
 
 module.exports = {
-    addStudent,
-    updateStudent,
-    deleteStudent,
-    getAllStudent
+    addPatients,
+    updatePatients,
+    deletePatients,
+    getAllPatients
 };
