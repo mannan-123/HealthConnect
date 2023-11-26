@@ -1,0 +1,285 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Install\\Node\\node.exe',
+1 verbose cli   'D:\\Install\\Node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '@mongodb-js/zstd@1.1.0' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @mongodb-js/zstd@1.1.0
+8 silly fetchNamedPackageData @mongodb-js/zstd
+9 silly mapToRegistry name @mongodb-js/zstd
+10 silly mapToRegistry scope (from package name) @mongodb-js
+11 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '@mongodb-js/zstd',
+14 silly mapToRegistry   scope: '@mongodb-js',
+14 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd',
+14 silly mapToRegistry   name: '@mongodb-js/zstd',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd
+16 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 10:27:06 PM
+19 verbose request id 77daab9047a58a2b
+20 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd
+21 http 200 https://registry.npmjs.org/@mongodb-js%2fzstd
+22 verbose headers { date: 'Sun, 26 Nov 2023 17:27:01 GMT',
+22 verbose headers   'content-type': 'application/json',
+22 verbose headers   'transfer-encoding': 'chunked',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'cf-ray': '82c3d6ec8986d1d0-MCT',
+22 verbose headers   'cf-cache-status': 'REVALIDATED',
+22 verbose headers   'access-control-allow-origin': '*',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: 'W/"0a0607e905aac6c4b81c8fda4cd0db0f"',
+22 verbose headers   'last-modified': 'Tue, 29 Aug 2023 17:11:39 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   server: 'cloudflare',
+22 verbose headers   'content-encoding': 'gzip' }
+23 silly get cb [ 200,
+23 silly get   { date: 'Sun, 26 Nov 2023 17:27:01 GMT',
+23 silly get     'content-type': 'application/json',
+23 silly get     'transfer-encoding': 'chunked',
+23 silly get     connection: 'keep-alive',
+23 silly get     'cf-ray': '82c3d6ec8986d1d0-MCT',
+23 silly get     'cf-cache-status': 'REVALIDATED',
+23 silly get     'access-control-allow-origin': '*',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: 'W/"0a0607e905aac6c4b81c8fda4cd0db0f"',
+23 silly get     'last-modified': 'Tue, 29 Aug 2023 17:11:39 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     server: 'cloudflare',
+23 silly get     'content-encoding': 'gzip' } ]
+24 verbose get saving @mongodb-js/zstd to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\_40mongodb-js_252fzstd\.cache.json
+25 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule @mongodb-js/zstd@1.1.0 checking installable status
+39 silly cache add args [ '@mongodb-js/zstd@1.1.0', null ]
+40 verbose cache add spec @mongodb-js/zstd@1.1.0
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: '@mongodb-js/zstd@1.1.0',
+41 silly cache add   scope: '@mongodb-js',
+41 silly cache add   escapedName: '@mongodb-js%2fzstd',
+41 silly cache add   name: '@mongodb-js/zstd',
+41 silly cache add   rawSpec: '1.1.0',
+41 silly cache add   spec: '1.1.0',
+41 silly cache add   type: 'version' }
+42 silly addNamed @mongodb-js/zstd@1.1.0
+43 verbose addNamed "1.1.0" is a plain semver version for @mongodb-js/zstd
+44 silly mapToRegistry name @mongodb-js/zstd
+45 silly mapToRegistry scope (from package name) @mongodb-js
+46 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: '@mongodb-js/zstd',
+49 silly mapToRegistry   scope: '@mongodb-js',
+49 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd',
+49 silly mapToRegistry   name: '@mongodb-js/zstd',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd
+51 verbose addNameVersion registry:https://registry.npmjs.org/@mongodb-js%2fzstd not in flight; fetching
+52 verbose get https://registry.npmjs.org/@mongodb-js%2fzstd not expired, no request
+53 silly mapToRegistry name @mongodb-js/zstd
+54 silly mapToRegistry scope (from package name) @mongodb-js
+55 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: '@mongodb-js/zstd',
+58 silly mapToRegistry   scope: '@mongodb-js',
+58 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd',
+58 silly mapToRegistry   name: '@mongodb-js/zstd',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd
+60 verbose addRemoteTarball https://registry.npmjs.org/@mongodb-js/zstd/-/zstd-1.1.0.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/@mongodb-js/zstd/-/zstd-1.1.0.tgz',
+61 verbose addRemoteTarball   'f7cbaf2d700115155842322403f3684869026285' ]
+62 info retry fetch attempt 1 at 10:27:10 PM
+63 info attempt registry request try #1 at 10:27:10 PM
+64 http fetch GET https://registry.npmjs.org/@mongodb-js/zstd/-/zstd-1.1.0.tgz
+65 http fetch 200 https://registry.npmjs.org/@mongodb-js/zstd/-/zstd-1.1.0.tgz
+66 silly fetchAndShaCheck shasum f7cbaf2d700115155842322403f3684869026285
+67 verbose addTmpTarball C:\Users\ADMINI~1\AppData\Local\Temp\npm-4796-41784aa3\registry.npmjs.org\_40mongodb-js\zstd\-\zstd-1.1.0.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for @mongodb-js/zstd@1.1.0
+69 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+70 silly cache afterAdd @mongodb-js/zstd@1.1.0
+71 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\@mongodb-js\zstd\1.1.0\package\package.json not in flight; writing
+72 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+73 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\@mongodb-js\zstd\1.1.0\package\package.json written
+74 silly fetchNamedPackageData @mongodb-js/zstd-win32-x64-msvc
+75 silly mapToRegistry name @mongodb-js/zstd-win32-x64-msvc
+76 silly mapToRegistry scope (from package name) @mongodb-js
+77 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry https://registry.npmjs.org/
+80 silly mapToRegistry data Result {
+80 silly mapToRegistry   raw: '@mongodb-js/zstd-win32-x64-msvc',
+80 silly mapToRegistry   scope: '@mongodb-js',
+80 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-win32-x64-msvc',
+80 silly mapToRegistry   name: '@mongodb-js/zstd-win32-x64-msvc',
+80 silly mapToRegistry   rawSpec: '',
+80 silly mapToRegistry   spec: 'latest',
+80 silly mapToRegistry   type: 'tag' }
+81 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-win32-x64-msvc
+82 silly fetchNamedPackageData @mongodb-js/zstd-darwin-x64
+83 silly mapToRegistry name @mongodb-js/zstd-darwin-x64
+84 silly mapToRegistry scope (from package name) @mongodb-js
+85 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: '@mongodb-js/zstd-darwin-x64',
+88 silly mapToRegistry   scope: '@mongodb-js',
+88 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-darwin-x64',
+88 silly mapToRegistry   name: '@mongodb-js/zstd-darwin-x64',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-darwin-x64
+90 silly fetchNamedPackageData @mongodb-js/zstd-linux-x64-gnu
+91 silly mapToRegistry name @mongodb-js/zstd-linux-x64-gnu
+92 silly mapToRegistry scope (from package name) @mongodb-js
+93 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: '@mongodb-js/zstd-linux-x64-gnu',
+96 silly mapToRegistry   scope: '@mongodb-js',
+96 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-linux-x64-gnu',
+96 silly mapToRegistry   name: '@mongodb-js/zstd-linux-x64-gnu',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-x64-gnu
+98 silly fetchNamedPackageData @mongodb-js/zstd-darwin-arm64
+99 silly mapToRegistry name @mongodb-js/zstd-darwin-arm64
+100 silly mapToRegistry scope (from package name) @mongodb-js
+101 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry data Result {
+104 silly mapToRegistry   raw: '@mongodb-js/zstd-darwin-arm64',
+104 silly mapToRegistry   scope: '@mongodb-js',
+104 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-darwin-arm64',
+104 silly mapToRegistry   name: '@mongodb-js/zstd-darwin-arm64',
+104 silly mapToRegistry   rawSpec: '',
+104 silly mapToRegistry   spec: 'latest',
+104 silly mapToRegistry   type: 'tag' }
+105 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-darwin-arm64
+106 silly fetchNamedPackageData @mongodb-js/zstd-linux-arm64-gnu
+107 silly mapToRegistry name @mongodb-js/zstd-linux-arm64-gnu
+108 silly mapToRegistry scope (from package name) @mongodb-js
+109 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry data Result {
+112 silly mapToRegistry   raw: '@mongodb-js/zstd-linux-arm64-gnu',
+112 silly mapToRegistry   scope: '@mongodb-js',
+112 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-linux-arm64-gnu',
+112 silly mapToRegistry   name: '@mongodb-js/zstd-linux-arm64-gnu',
+112 silly mapToRegistry   rawSpec: '',
+112 silly mapToRegistry   spec: 'latest',
+112 silly mapToRegistry   type: 'tag' }
+113 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-arm64-gnu
+114 silly fetchNamedPackageData @mongodb-js/zstd-linux-arm64-musl
+115 silly mapToRegistry name @mongodb-js/zstd-linux-arm64-musl
+116 silly mapToRegistry scope (from package name) @mongodb-js
+117 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry data Result {
+120 silly mapToRegistry   raw: '@mongodb-js/zstd-linux-arm64-musl',
+120 silly mapToRegistry   scope: '@mongodb-js',
+120 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-linux-arm64-musl',
+120 silly mapToRegistry   name: '@mongodb-js/zstd-linux-arm64-musl',
+120 silly mapToRegistry   rawSpec: '',
+120 silly mapToRegistry   spec: 'latest',
+120 silly mapToRegistry   type: 'tag' }
+121 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-arm64-musl
+122 silly fetchNamedPackageData @mongodb-js/zstd-linux-x64-musl
+123 silly mapToRegistry name @mongodb-js/zstd-linux-x64-musl
+124 silly mapToRegistry scope (from package name) @mongodb-js
+125 verbose mapToRegistry no registry URL found in name for scope @mongodb-js
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: '@mongodb-js/zstd-linux-x64-musl',
+128 silly mapToRegistry   scope: '@mongodb-js',
+128 silly mapToRegistry   escapedName: '@mongodb-js%2fzstd-linux-x64-musl',
+128 silly mapToRegistry   name: '@mongodb-js/zstd-linux-x64-musl',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-x64-musl
+130 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-win32-x64-msvc
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 10:27:15 PM
+133 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-win32-x64-msvc
+134 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-darwin-x64
+135 verbose request no auth needed
+136 info attempt registry request try #1 at 10:27:15 PM
+137 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-darwin-x64
+138 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-x64-gnu
+139 verbose request no auth needed
+140 info attempt registry request try #1 at 10:27:15 PM
+141 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-linux-x64-gnu
+142 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-darwin-arm64
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 10:27:15 PM
+145 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-darwin-arm64
+146 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-arm64-gnu
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 10:27:15 PM
+149 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-linux-arm64-gnu
+150 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-arm64-musl
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 10:27:15 PM
+153 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-linux-arm64-musl
+154 verbose request uri https://registry.npmjs.org/@mongodb-js%2fzstd-linux-x64-musl
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 10:27:15 PM
+157 http request GET https://registry.npmjs.org/@mongodb-js%2fzstd-linux-x64-musl
+158 verbose stack Error: kill ENOSYS
+158 verbose stack     at exports._errnoException (util.js:1026:11)
+158 verbose stack     at process.kill (internal/process.js:172:13)
+158 verbose stack     at process.listener (D:\Install\Node\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+158 verbose stack     at emitNone (events.js:91:20)
+158 verbose stack     at process.emit (events.js:185:7)
+158 verbose stack     at processEmit (D:\Install\Node\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+158 verbose stack     at processEmit (D:\Install\Node\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+158 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+159 verbose cwd D:\Study\Semesters\5th Semester\SE Lab Project\Final\HealthConnect
+160 error Windows_NT 10.0.22621
+161 error argv "D:\\Install\\Node\\node.exe" "D:\\Install\\Node\\node_modules\\npm\\bin\\npm-cli.js" "install" "@mongodb-js/zstd@1.1.0"
+162 error node v6.9.1
+163 error npm  v3.10.8
+164 error code ENOSYS
+165 error errno ENOSYS
+166 error syscall kill
+167 error kill ENOSYS
+168 error If you need help, you may report this error at:
+168 error     <https://github.com/npm/npm/issues>
+169 verbose exit [ 1, true ]
