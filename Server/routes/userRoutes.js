@@ -2,10 +2,11 @@ const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController");
 
-router.post("/users", userController.addPatients);
-router.get("/users", userController.getAllPatients);
-// update and delete students on tha base of thier Id
-router.put("/users/:id", userController.updatePatients);
-router.delete("/users/:id", userController.deletePatients);
+router.post("/patient", userController.Signup);
+router.post("/login", userController.Login);
+router.get("/patient", userController.getUser);
+router.put("/patient/:id", userController.updateUser);
+router.delete("/patient/:id", userController.deleteUser);
 
 module.exports = router;
+

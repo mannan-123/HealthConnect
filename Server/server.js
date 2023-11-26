@@ -1,15 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 require("./utils/db");
-const studentRoutes = require("./routes/userRoutes");
+const morgan = require('morgan');
+const userRoute = require("./routes/userRoutes");
 const cors = require('cors');
 const app = express();
 const port = 3005;
 
 app.use(bodyParser.json());
 app.use(cors());
-
-app.use("/api", studentRoutes);
+app.use(morgan('dev'));
+app.use("/api", userRoute);
 
 app.get('/', (req, res) =>
 {
@@ -18,5 +19,5 @@ app.get('/', (req, res) =>
 
 app.listen(port, () =>
 {
-    console.log(`Server is listening on port${port}`);
+    console.log(`Server is listening on port ${port}`);
 });

@@ -1,65 +1,101 @@
-const Users = require("../models/user");
+const bcrypt = require('bcrypt');
+const User = require("../models/user");
 
-// add student
-async function addPatients(req, res)
+// Signup
+async function Signup(req, res)
 {
     try
     {
-        const student = await Users.create(req.body);
-        res.status(201).json(student);
+        let { email, password, name } = req.body;
+        let hashPass = await bcrypt.hash(password,8);
+        console.log(req.body);
+        console.log(hashPass);
+        let data = {
+            email: email,
+            name: name,
+            password: hashPass,
+        };
+        const user = await User.create(data);
+        res.status(201).json({ message: 'created', data: user, status: 'ok' });
+    } catch (err)
+    {
+        console.log(err);
+    }
+}
+// Login
+async function Login(req, res)
+{
+    try
+    {
+        let { email, password } = req.body;
+        const user = await User.findOne({ email });
+        console.log(!user);
+        if (!user)
+        {
+            return res.status(404).json({ message: 'not found', data: null, status: 'ok' });
+        }
+        else
+        {
+            if (bcrypt.compare(password, user.password))
+            {
+                console.log(user);
+                return res.status(200).json({ message: 'found', data: user, status: 'ok' });
+            } else
+            {
+                return res.status(401).json({ message: 'password not matched', data: null, status: 'ok' });
+
+            }
+        }
     } catch (err)
     {
         res.status(500).json({ error: err.message });
     }
 }
-// get all students
-
-
-async function getAllPatients(req, res)
+async function getUser(req, res)
 {
     try
     {
-        const students = await Users.find();
-        res.status(200).json({ student: students, message: "Successfully finded" });
+        const users = await User.find();
+        res.status(200).json({ user: users, message: "Successfully finded" });
     } catch (err)
     {
         res.status(500).json({ error: err.message, message: "Internal server error" });
     }
 }
-// update student by id
-async function updatePatients(req, res)
+// update user by id
+async function updateUser(req, res)
 {
     try
     {
         const { id } = req.params;
-        const updatedStudent = await Users.findByIdAndUpdate(id, req.body, {
+        const updatedUser = await User.findByIdAndUpdate(id, req.body, {
             new: true,
         });
-        res.json(updatedStudent);
+        res.json(updatedUser);
     } catch (err)
     {
         res.status(500).json({ error: err.message });
     }
 }
-// delete a student by id
+// delete a user by id
 
-async function deletePatients(req, res)
+async function deleteUser(req, res)
 {
     try
     {
         const { id } = req.params;
         console.log(id);
-        await Users.findByIdAndRemove(id);
+        await User.findByIdAndDelete(id);
         res.sendStatus(200);
     } catch (err)
     {
         res.status(500).json({ error: err.message });
     }
 }
-
 module.exports = {
-    addPatients,
-    updatePatients,
-    deletePatients,
-    getAllPatients
+    Login,
+    Signup,
+    deleteUser,
+    updateUser,
+    getUser,
 };
